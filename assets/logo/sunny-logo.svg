@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">SUNNY CATALOG 標誌</title>
+  <defs><linearGradient id="g" x1="8" y1="6" x2="55" y2="59" gradientUnits="userSpaceOnUse"><stop stop-color="#FFC86E"/><stop offset="1" stop-color="#FF9B27"/></linearGradient></defs>
+  <rect width="64" height="64" rx="19" fill="url(#g)"/>
+  <circle cx="32" cy="28" r="11" fill="#FFFDF7"/>
+  <g stroke="#FFFDF7" stroke-width="3" stroke-linecap="round"><path d="M32 9v5M32 42v5M13 28h5M46 28h5M18.5 14.5l3.6 3.6M41.9 37.9l3.6 3.6M45.5 14.5l-3.6 3.6M22.1 37.9l-3.6 3.6"/></g>
+  <path d="M17 49c7-5 23-5 30 0" fill="none" stroke="#FFFDF7" stroke-width="3" stroke-linecap="round" opacity=".78"/>
+</svg>
+
