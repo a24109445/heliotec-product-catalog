@@ -2,6 +2,13 @@
 
 一個可直接部署到 GitHub Pages 的靜態產品型錄網站。使用 HTML、CSS 與原生 JavaScript 製作，不需要後端、資料庫、API Key 或安裝任何套件。
 
+## 目前公開網址
+
+- 產品型錄：https://a24109445.github.io/heliotec-product-catalog/
+- GitHub Repository：https://github.com/a24109445/heliotec-product-catalog
+
+後續只要持續更新同一個 Repository 的 `main` 分支，GitHub Pages 會自動重新部署，公開網址不會改變。請勿重新命名 Repository 或 GitHub 帳號，以免網址跟著變更。
+
 ## 功能摘要
 
 - 分類式產品選單，可展開、收合與即時搜尋
@@ -251,3 +258,4 @@ GitHub Pages 會自動重新部署，通常數分鐘內即可看到更新。
 ## 瀏覽器支援
 
 建議使用目前版本的 Chrome、Edge、Safari 或 Firefox。PDF 內嵌顯示能力由瀏覽器決定；不支援時，網站會顯示下載與另開檔案的替代操作。
+
