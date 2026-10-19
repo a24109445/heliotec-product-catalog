@@ -2,6 +2,13 @@
 
 一個可直接部署到 GitHub Pages 的靜態產品型錄網站。使用 HTML、CSS 與原生 JavaScript 製作，不需要後端、資料庫、API Key 或安裝任何套件。
 
+## 目前公開網址
+
+- 產品型錄：https://a24109445.github.io/heliotec-product-catalog/
+- GitHub Repository：https://github.com/a24109445/heliotec-product-catalog
+
+後續只要持續更新同一個 Repository 的 `main` 分支，GitHub Pages 會自動重新部署，公開網址不會改變。請勿重新命名 Repository 或 GitHub 帳號，以免網址跟著變更。
+
 ## 功能摘要
 
 - 分類式產品選單，可展開、收合與即時搜尋
@@ -171,6 +178,16 @@ PDF 型錄範例：
   category: "新產品分類",
   name: "產品 H",
   description: "產品 H 的簡短介紹。",
+  translations: {
+    en: {
+      name: "Product H",
+      description: "A short introduction to Product H."
+    },
+    ja: {
+      name: "製品 H",
+      description: "製品 H の簡単な紹介です。"
+    }
+  },
   type: "pdf",
   files: [
     "assets/catalogs/product-h/catalog.pdf"
@@ -184,6 +201,8 @@ PDF 型錄範例：
 `previewFiles` 是選填欄位。加入由 PDF 各頁轉出的 PNG 後，網站會以乾淨、無工具列、無左側縮圖的方式完整顯示頁面；原始 PDF 仍供下載與另開分頁使用。若不設定，網站會改用瀏覽器內建 PDF 預覽器。
 
 每個 `id` 必須唯一。`category` 名稱相同的產品會自動歸在同一分類，不需要修改 HTML。
+
+網站支援繁體中文、英文與日文。繁體中文使用 `name`、`description`，英文與日文文字放在 `translations.en`、`translations.ja`。分類的三語名稱集中在 `productCategories` 中管理；若沒有填寫翻譯，網站會自動使用繁體中文內容。
 
 ## 更換產品 JPG、PNG 或 PDF
 

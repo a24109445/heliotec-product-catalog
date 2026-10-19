@@ -13,58 +13,73 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">跳到主要內容</a>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">跳到主要內容</a>
 
   <header class="site-header">
     <div class="brand-lockup">
-      <button class="menu-button icon-button" id="menu-button" type="button" aria-label="開啟產品選單" aria-controls="sidebar" aria-expanded="false">
+      <button class="menu-button icon-button" id="menu-button" type="button" aria-label="開啟產品選單" aria-controls="sidebar" aria-expanded="false" data-i18n-aria="openMenu">
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
       <div class="brand-logo" aria-label="公司標誌">
         <img src="assets/logo/heliotec-logo-transparent.png" alt="HELIOTEC 標誌">
       </div>
     </div>
-    <div class="header-badge" aria-label="目前頁面：產品型錄">
-      <span class="badge-dot" aria-hidden="true"></span>
-      產品型錄
+    <div class="header-actions">
+      <div class="header-badge" aria-label="目前頁面：產品型錄" data-i18n-aria="currentPageCatalog">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span data-i18n="catalogLabel">產品型錄</span>
+      </div>
+      <label class="language-control" for="language-select">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span class="sr-only" id="language-label" data-i18n="language">語言</span>
+        <select id="language-select" aria-labelledby="language-label">
+          <option value="zh-Hant">繁體中文</option>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+        </select>
+        <svg class="language-chevron" aria-hidden="true" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg>
+      </label>
     </div>
   </header>
 
   <div class="app-shell">
-    <aside class="sidebar" id="sidebar" aria-label="產品選單">
+    <aside class="sidebar" id="sidebar" aria-label="產品選單" data-i18n-aria="productMenu">
       <div class="sidebar-heading">
         <div>
           <span class="eyebrow">PRODUCTS</span>
-          <h2>探索產品</h2>
+          <div class="sidebar-title-row">
+            <h2 data-i18n="productCatalog">產品型錄</h2>
+            <span class="product-total" id="product-total">9 項產品</span>
+          </div>
         </div>
-        <button class="close-sidebar icon-button" id="close-sidebar" type="button" aria-label="關閉產品選單">
+        <button class="close-sidebar icon-button" id="close-sidebar" type="button" aria-label="關閉產品選單" data-i18n-aria="closeMenu">
           <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
         </button>
       </div>
 
       <label class="search-box" for="product-search">
         <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
-        <span class="sr-only">搜尋產品</span>
-        <input id="product-search" type="search" placeholder="搜尋產品名稱…" autocomplete="off">
+        <span class="sr-only" data-i18n="searchProducts">搜尋產品</span>
+        <input id="product-search" type="search" placeholder="搜尋產品名稱…" autocomplete="off" data-i18n-placeholder="searchPlaceholder">
         <kbd aria-hidden="true">/</kbd>
       </label>
 
-      <nav class="product-nav" id="product-nav" aria-label="產品分類"></nav>
+      <nav class="product-nav" id="product-nav" aria-label="產品分類" data-i18n-aria="productCategories"></nav>
 
       <div class="sidebar-footer">
         <div class="support-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M12 3a8 8 0 0 0-8 8v6a2 2 0 0 0 2 2h2v-7H5v-1a7 7 0 0 1 14 0v1h-3v7h2a2 2 0 0 0 2-2v-6a8 8 0 0 0-8-8Z"/></svg>
         </div>
-        <div><strong>需要產品協助？</strong><span>歡迎與我們的專員聯繫</span></div>
+        <div><strong data-i18n="needHelp">需要產品協助？</strong><span data-i18n="contactSpecialist">歡迎與我們的專員聯繫</span></div>
       </div>
     </aside>
 
-    <button class="drawer-backdrop" id="drawer-backdrop" type="button" aria-label="關閉產品選單" tabindex="-1"></button>
+    <button class="drawer-backdrop" id="drawer-backdrop" type="button" aria-label="關閉產品選單" tabindex="-1" data-i18n-aria="closeMenu"></button>
 
     <main class="main-content" id="main-content" tabindex="-1">
       <section class="product-intro" aria-labelledby="product-title">
         <div>
-          <div class="breadcrumb"><span>產品型錄</span><span aria-hidden="true">/</span><strong id="breadcrumb-name">產品 A</strong></div>
+          <div class="breadcrumb"><span data-i18n="productCatalog">產品型錄</span><span aria-hidden="true">/</span><strong id="breadcrumb-name">產品 A</strong></div>
           <h1 id="product-title">產品 A</h1>
           <p id="product-description">產品 A 的簡短介紹</p>
         </div>
@@ -77,55 +92,55 @@
             <span class="toolbar-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4M9 12h6M9 16h6"/></svg>
             </span>
-            <div><span id="catalog-heading">目前型錄</span><strong id="toolbar-product-name">產品 A</strong></div>
+            <div><span id="catalog-heading" data-i18n="currentCatalog">目前型錄</span><strong id="toolbar-product-name">產品 A</strong></div>
           </div>
 
-          <div class="catalog-actions" aria-label="型錄操作工具列">
+          <div class="catalog-actions" aria-label="型錄操作工具列" data-i18n-aria="catalogToolbar">
             <span class="page-indicator" id="page-indicator" aria-live="polite">第 1 / 3 頁</span>
             <div class="action-group" id="page-controls">
-              <button class="tool-button" id="prev-page" type="button" aria-label="上一頁" title="上一頁">
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg><span>上一頁</span>
+              <button class="tool-button" id="prev-page" type="button" aria-label="上一頁" title="上一頁" data-i18n-aria="previousPage" data-i18n-title="previousPage">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg><span data-i18n="previousPage">上一頁</span>
               </button>
-              <button class="tool-button" id="next-page" type="button" aria-label="下一頁" title="下一頁">
-                <span>下一頁</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+              <button class="tool-button" id="next-page" type="button" aria-label="下一頁" title="下一頁" data-i18n-aria="nextPage" data-i18n-title="nextPage">
+                <span data-i18n="nextPage">下一頁</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
               </button>
             </div>
             <button class="tool-button" id="zoom-button" type="button" aria-label="放大檢視型錄">
               <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4M11 8v6M8 11h6"/></svg><span>放大</span>
             </button>
             <a class="tool-button" id="open-button" href="#" target="_blank" rel="noopener" aria-label="在新分頁開啟型錄" hidden>
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-9 9"/><path d="M18 13v6H5V6h6"/></svg><span>另開</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-9 9"/><path d="M18 13v6H5V6h6"/></svg><span data-i18n="openNew">另開</span>
             </a>
             <a class="tool-button primary" id="download-button" href="#" download>
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg><span>下載</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg><span data-i18n="download">下載</span>
             </a>
           </div>
         </div>
 
         <div class="catalog-stage" id="catalog-stage" aria-live="polite"></div>
-        <div class="thumbnail-strip" id="thumbnail-strip" aria-label="型錄頁面縮圖"></div>
+        <div class="thumbnail-strip" id="thumbnail-strip" aria-label="型錄頁面縮圖" data-i18n-aria="catalogThumbnails"></div>
       </section>
 
       <footer class="content-footer">
         <span>© <span id="current-year"></span> SUNNY CATALOG</span>
-        <span>精選產品・清楚呈現・隨時瀏覽</span>
+        <span data-i18n="footerTagline">精選產品・清楚呈現・隨時瀏覽</span>
       </footer>
     </main>
   </div>
 
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
     <div class="lightbox-toolbar">
-      <strong id="lightbox-title">型錄放大檢視</strong>
+      <strong id="lightbox-title" data-i18n="catalogZoomView">型錄放大檢視</strong>
       <span id="lightbox-page"></span>
-      <button class="icon-button lightbox-close" id="lightbox-close" type="button" aria-label="關閉放大檢視">
+      <button class="icon-button lightbox-close" id="lightbox-close" type="button" aria-label="關閉放大檢視" data-i18n-aria="closeZoomView">
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
       </button>
     </div>
     <div class="lightbox-body" id="lightbox-body"></div>
-    <button class="lightbox-nav previous" id="lightbox-prev" type="button" aria-label="上一頁">
+    <button class="lightbox-nav previous" id="lightbox-prev" type="button" aria-label="上一頁" data-i18n-aria="previousPage">
       <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
     </button>
-    <button class="lightbox-nav next" id="lightbox-next" type="button" aria-label="下一頁">
+    <button class="lightbox-nav next" id="lightbox-next" type="button" aria-label="下一頁" data-i18n-aria="nextPage">
       <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
     </button>
   </div>
