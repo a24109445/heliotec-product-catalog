@@ -57,7 +57,7 @@ const products = [
         description: "An AI vision-based hand tracking and machine safety system for real-time detection and hazardous-zone protection."
       },
       ja: {
-        name: "AI Vision Guardian",
+        name: "AIビジョンガーディアン",
         description: "リアルタイム検知と危険区域の保護を実現する、AIビジョンによるハンドトラッキング・機械安全システムです。"
       }
     },
@@ -76,7 +76,7 @@ const products = [
         description: "An automated sweeper solution for smart cleaning in factories, warehouses, and commercial spaces."
       },
       ja: {
-        name: "Automation Sweeper",
+        name: "自動清掃機",
         description: "工場、倉庫、商業施設のスマート清掃に適した自動清掃機ソリューションです。"
       }
     },
@@ -91,7 +91,7 @@ const products = [
     description: "Band Saw KV-50 工業帶鋸機產品型錄與設備資訊。",
     translations: {
       en: { name: "Band Saw KV-50", description: "Product catalog and equipment information for the Band Saw KV-50 industrial band saw." },
-      ja: { name: "Band Saw KV-50", description: "Band Saw KV-50 産業用バンドソーの製品カタログと設備情報です。" }
+      ja: { name: "バンドソー KV-50", description: "産業用バンドソー KV-50の製品カタログと設備情報です。" }
     },
     type: "pdf",
     files: ["assets/catalogs/band-saw-50/catalog.pdf"],
@@ -104,7 +104,7 @@ const products = [
     description: "Band Saw 15\"~18\" 工業帶鋸機產品型錄與設備資訊。",
     translations: {
       en: { name: "Band Saw 15\"~18\"", description: "Product catalog and equipment information for the Band Saw 15\"~18\" industrial band saw." },
-      ja: { name: "Band Saw 15\"~18\"", description: "Band Saw 15\"~18\" 産業用バンドソーの製品カタログと設備情報です。" }
+      ja: { name: "バンドソー 15〜18インチ", description: "産業用バンドソー 15〜18インチの製品カタログと設備情報です。" }
     },
     type: "pdf",
     files: ["assets/catalogs/band-saw-15-18/catalog.pdf"],
@@ -121,7 +121,7 @@ const products = [
         description: "A variable-speed oscillating edge sander with multi-angle sanding and digital VFD speed control."
       },
       ja: {
-        name: "Oscillating Edge Sander",
+        name: "オシレーティングエッジサンダー",
         description: "多角度研磨とデジタルインバーターによる速度制御に対応した、可変速オシレーティングエッジサンダーです。"
       }
     },
