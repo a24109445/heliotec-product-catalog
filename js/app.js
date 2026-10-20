@@ -218,7 +218,7 @@
     } catch (error) {
       // file:// 預覽環境可能停用 localStorage，維持預設語言即可。
     }
-    return "zh-Hant";
+    return "en";
   }
 
   function saveLanguage(language) {
