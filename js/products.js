@@ -28,6 +28,14 @@ const productCategories = [
     }
   },
   {
+    name: "砂磨設備",
+    subtitle: "Sanding Equipment",
+    translations: {
+      en: { name: "Sanding Equipment", subtitle: "" },
+      ja: { name: "研磨設備", subtitle: "Sanding Equipment" }
+    }
+  },
+  {
     name: "空氣淨化與集塵設備",
     subtitle: "Air Filtration & Dust Collection",
     translations: {
@@ -101,6 +109,25 @@ const products = [
     type: "pdf",
     files: ["assets/catalogs/band-saw-15-18/catalog.pdf"],
     previewFiles: ["assets/catalogs/band-saw-15-18/preview-page-01.png"]
+  },
+  {
+    id: "oscillating-edge-sander",
+    category: "砂磨設備",
+    name: "Oscillating Edge Sander",
+    description: "變速振盪式邊緣砂磨機，支援多角度砂磨與數位變頻調速。",
+    translations: {
+      en: {
+        name: "Oscillating Edge Sander",
+        description: "A variable-speed oscillating edge sander with multi-angle sanding and digital VFD speed control."
+      },
+      ja: {
+        name: "Oscillating Edge Sander",
+        description: "多角度研磨とデジタルインバーターによる速度制御に対応した、可変速オシレーティングエッジサンダーです。"
+      }
+    },
+    type: "pdf",
+    files: ["assets/catalogs/oscillating-edge-sander/catalog.pdf"],
+    previewFiles: ["assets/catalogs/oscillating-edge-sander/preview-page-01.png"]
   },
   {
     id: "cti65",
