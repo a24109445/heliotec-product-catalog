@@ -126,8 +126,8 @@ const products = [
       }
     },
     type: "pdf",
-    files: ["assets/catalogs/oscillating-edge-sander/catalog.pdf"],
-    previewFiles: ["assets/catalogs/oscillating-edge-sander/preview-page-01.png"]
+    files: ["assets/catalogs/oscillating-edge-sander/catalog.pdf?v=20261021"],
+    previewFiles: ["assets/catalogs/oscillating-edge-sander/preview-page-01.png?v=20261021"]
   },
   {
     id: "cti65",
@@ -193,5 +193,24 @@ const products = [
     type: "pdf",
     files: ["assets/catalogs/dust-collector-2/catalog.pdf"],
     previewFiles: ["assets/catalogs/dust-collector-2/preview-page-01.png"]
+  },
+  {
+    id: "automated-vacuum-switch",
+    category: "空氣淨化與集塵設備",
+    name: "Automated Vacuum Switch",
+    description: "集塵設備自動連動開關，隨主機啟動集塵設備，並在主機停止後延遲關閉。",
+    translations: {
+      en: {
+        name: "Automated Vacuum Switch",
+        description: "An automatic switch that starts vacuum equipment with the main tool and switches it off after a delay when the tool stops."
+      },
+      ja: {
+        name: "集塵機用自動連動スイッチ",
+        description: "電動工具の起動に連動して集塵機を自動運転し、工具の停止後は遅延して集塵機を停止するスイッチです。"
+      }
+    },
+    type: "pdf",
+    files: ["assets/catalogs/automated-vacuum-switch/catalog.pdf"],
+    previewFiles: ["assets/catalogs/automated-vacuum-switch/preview-page-01.png"]
   }
 ];
