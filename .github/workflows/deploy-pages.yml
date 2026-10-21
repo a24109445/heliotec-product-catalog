@@ -25,6 +25,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Version scripts and styles to refresh browser caches
+        run: |
+          python3 - <<'PY'
+          import os
+          import re
+          from pathlib import Path
+
+          page = Path("index.html")
+          version = os.environ["GITHUB_SHA"][:12]
+          html = page.read_text(encoding="utf-8")
+          html = re.sub(
+              r'((?:src|href)="(?:js/[^"?]+\.js|css/[^"?]+\.css))(?:\?[^"\s]*)?(")',
+              lambda match: f'{match[1]}?v={version}{match[2]}',
+              html,
+          )
+          page.write_text(html, encoding="utf-8")
+          PY
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
